@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+
+*{
+    font-family: "Poppins", sans-serif;
+    /*border: .1rem solid white;*/
+}
+
+.root{
+    color: #dffe02;
+    color: #898989;
+    color: #171c22;
+}
+
+.bg-green{
+    background-color: blue;
+}
+
+.bg-dark-blue{
+    background-color: blue;
+}
+
+.txt-green{
+    color:blue;
+}
+
+.txt-white{
+    color: white;
+    font-family: "Merriweather", sans-serif;
+}
+
+img{
+    max-width: 80%;
+    height: auto;
+}
+
+.my-btn{
+    border: .1rem solid blue !important;
+    padding: .5rem 1.6rem;
+    font-size:1.5rem;
+    color:white;
+}
+.my-btn:hover{
+    background:white;
+    border:2px solid blue;
+    color:blue;
+}
+.image-container{
+    width: 32rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    margin-top:150px;
+    border-top:1rem solid white;
+    border-bottom:1rem solid white;
+    background-image: url(Images/Profile.jpg.jpg);
+    background-position: center;
+    background-size: 90%; 
+    box-shadow:0 0 1rem white,
+    inset 0 0 1rem white,
+    0 0 1rem blue,
+    inset 0 0 1rem blue,
+    0 0 6rem blue,
+    inset 0 0 5rem blue;   
+}
+
+
+h1{
+    font-size: 4rem;
+    font-family: "Merriweather", sans-serif;
+}
+
+p{
+    font-size: .95rem;
+    font-family: "Merriweather", sans-serif;
+}
+
+.para{
+    max-width: 500px;
+    font-family: "Merriweather", sans-serif;
+}
+
+.para{
+    max-width: 500px;
+    font-family: "Merriweather", sans-serif;
+}
+
+
+
+
+.main-txt{
+    letter-spacing: .2rem;
+    font-size: .8rem;
+    font-family: "Merriweather", sans-serif;
+}
+
+/* About Section Start */
+
+.about-me
+{
+    width: 25rem;
+    margin-left:10px;
+    margin-top:20px;
+    border:6px solid white;
+    border-radius:10%;
+    box-shadow:5px 5px 20px 5px blue;
+    font-family: "Merriweather", sans-serif;
+    text-decoration: font-family: "Merriweather", sans-serif;;
+    
+}
+/* skill section start */
+
+#card
+{
+    /* position:relative; */
+    width:220px;
+    height:250px;
+    background:black;
+    /* display:flex; */
+    justify-content:center;
+    margin-left: 22%;
+    /* align-items:center; */
+}
+
+#card .percent
+{
+    position:relative;
+    width:150px;
+    height:150px;
+}
+#card .percent svg
+{
+    position:relative;
+    width:150px;
+    height:150px;
+    transform:rotate(270deg);
+}
+#card .percent svg circle
+{
+    width:100%;
+    height:100%;
+    fill:transparent;
+    stroke-width:2;
+    stroke:blue;
+    transform:translate(5px,5px);
+}
+ #card .percent svg circle:nth-child(2)
+{
+    stroke:blue;
+    stroke-dasharray:440;
+    stroke-dashoffset: calc(440-(440 * var(--num)) /100);
+    opacity:0;
+    animation:fadein 1s linear forwards;
+    animation-delay:2.5s;
+}
+@keyframes fadein
+{
+    0%
+    {
+        opacity:0;
+    }
+    100%
+    {
+        opacity:1;
+    }
+}
+.dot
+{
+    position:absolute;
+    inset:5px;
+    z-index:10px;
+    transform:rotate(calc(3.6deg * var(--num)));
+    animation:animatedot 2s linear forwards;
+}
+@keyframes animatedot
+{
+    0%
+    {
+        transform:rotate(0deg);
+    }
+    100%
+    {
+        transform:rotate(calc(3.6deg * var(--num)));
+    }
+}
+.dot::before
+{
+    content:"";
+    position:absolute;
+    top:-5px;
+    left:50%;
+    transform:translate(-50%);
+    width:10px;
+    height:10px;
+    border-radius:50%;
+    background:Blue;
+    box-shadow:0 0 10px var(--clr),0 0 30px var(--clr);
+}
+.number
+{
+    position:absolute;
+    inset:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+}
+.number h2
+{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:#fff;
+    font-weight:700;
+    font-size:2.5rem;
+}
+.number h2 span
+{
+    font-weight:300;
+    color:#fff;
+    font-size:1.5rem;
+}
+.number p
+{
+    font-weight:300;
+    font-size:0.75rem;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    color:rgba(255,255,255,0.75);
+}
+#h1
+{
+    color:blue;
+    
+}
+.home{
+    font-family: "Merriweather", sans-serif;
+}
+.span{
+    font-family: "Merriweather", sans-serif;
+
+}
+.contact
+{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:75vh;
+    background:black;
+    font-family: "Merriweather", sans-serif;
+}
+h2
+{
+    font-size:40px;
+    font-family: "Merriweather", sans-serif;
+    color:#fff;
+}
+.info li
+{
+    font-size:1.2rem;
+    font-family: "Merriweather", sans-serif;
+    line-height:30px;
+}
+.sci i
+{
+    font-size:2rem;
+    letter-spacing:20px;
+    margin-top:30px;
+}
+.form 
+{
+   
+    border-radius:20px ;
+    transition: 0.8s;
+    border:1px solid blue;
+    font-family: "Merriweather", sans-serif;
+    
+}
+    
+.form h3
+{
+    color:white
+}
+
+.form:hover
+{
+    background:blue;
+    border:2px solid #fff;
+
+}
+    
+.btn:hover
+{
+    border:2px solid blue!important;
+    border-radius: 10%;
+}
+footer
+{
+    background:blue;
+}
+
+.card-text
+{
+    color:#fff;
+}
+#letter
+{
+    color:blue;
+}
+.glow
+{
+     box-shadow:5px 5px 10px 5px blue;
+}
